@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+}
+
+html{
+  scroll-snap-type: y mandatory;
+}
+
+.App{
+  background-color: #607D8B;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.app_top{
+  margin-bottom: -90px;
+}
+
+.app_top>h1{
+  text-align: center;
+  color: #f5f6fa;
+}
+
+.app_logo{
+  padding-left: 20px;
+  height: 12vh;
+}
+
+.app_videos{
+  position: relative;
+  height: 65vh;
+  background-color: white;
+  width: 70%;
+  border-radius: 20px;
+  max-width: 450px;
+  max-height: 1200px;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.app_videos::-webkit-scrollbar{
+  display: none;
+}
+
+.app_videos{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+input[type="file"]{
+  position: fixed;
+  left : 30px;
+  top : 70px;
+  height : 8%;
+  width: 7%;
+  border-radius: 10px;
+  background-color: #3B3B98;
+}
+
+.upload{
+  position: fixed;
+  left : 60px;
+  top : 90px;
+  height: 10%;
+  width: 10%;
+}
